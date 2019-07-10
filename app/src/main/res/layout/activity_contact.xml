@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/appLayoutTheme"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        style="@style/appTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/headContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/ContactText"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/activeBGColor"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/contactImageView"
+            android:layout_width="138dp"
+            android:layout_height="91dp"
+            android:layout_alignTop="@+id/headContact"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/contact"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/barTextView"
+        style="@style/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/PhoneText"
+            android:layout_width="126dp"
+            android:layout_height="34dp"
+            android:layout_above="@+id/footerLinearLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginEnd="261dp"
+            android:layout_marginBottom="453dp"
+            android:text="@string/PhoneText"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:id="@+id/footerLinearLayout"
+            style="@style/footer"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bannerBGColor" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/appWebsite"
+                android:textColor="@color/bgColor" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/EmailText"
+            android:layout_width="126dp"
+            android:layout_height="34dp"
+            android:layout_above="@+id/footerLinearLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="261dp"
+            android:layout_marginBottom="504dp"
+            android:text="@string/Email"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/Textemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/footerLinearLayout"
+            android:layout_alignTop="@+id/EmailText"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="194dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="512dp"
+            android:text="@string/TextEmail"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/PhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_above="@+id/footerLinearLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="67dp"
+            android:layout_marginBottom="450dp"
+            android:text="@string/PhoneNum"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
